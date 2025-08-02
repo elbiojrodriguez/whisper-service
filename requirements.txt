@@ -1,5 +1,7 @@
 faster-whisper==0.10.0
-torch==2.2.2
+torch==2.2.2+cpu --index-url https://download.pytorch.org/whl/cpu
 ffmpeg-python==0.2.0
 fastapi==0.109.0
 uvicorn==0.27.0
+numpy==1.26.4
+python-multipart==0.0.6
