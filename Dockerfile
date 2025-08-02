@@ -15,4 +15,5 @@ WORKDIR /app
 COPY . .
 
 ENV PATH=/root/.local/bin:$PATH
+RUN pip install --no-cache-dir numpy==1.26.4 python-multipart
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "10000"]
