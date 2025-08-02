@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: whisper-service
+    plan: free
+    runtime: docker
+    autoDeploy: true
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    healthCheckPath: /health
